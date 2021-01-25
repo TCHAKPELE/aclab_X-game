@@ -1,0 +1,104 @@
+<div id="container">
+
+
+    <div style="text-align: center; color:black;">
+      <h1>{{title}}</h1>
+      </div>
+    
+    <div id="affiche">
+      
+      <audio src="assets/bruitage/Overworld.mp3" autoplay></audio>
+    
+      <div>
+        <h1>Round : {{Round}}</h1>
+        <img class="p1" src="{{Characters[numid].image}}">
+        <table>
+
+
+            <tr> 
+            
+                <td> Nom : </td>
+                <td> {{Characters[numid].name}}</td>
+            
+                </tr>
+            
+                <tr> 
+            
+                    <td> Pv : </td>
+                    <td> {{Characters[numid].pv}}</td>
+                
+                    </tr>
+            
+                    <tr> 
+            
+                        <td> Attaque : </td>
+                        <td> {{Characters[numid].attack}}</td>
+                    
+                        </tr>
+
+                        <tr> 
+            
+                            <td> Attaque_sp : </td>
+                            <td> {{Characters[numid].sp}}</td>
+                        
+                            </tr>
+            
+            
+            
+            </table>
+        <button type="button" class="play_commands" (click)="Attack(Characters[numid].attack);">Attack</button>
+        <button type="button" class="play_commands" (click)="Attack_sp({{Characters[numid].sp}});">Attack sp</button>
+        
+
+      </div>
+
+      <div>
+        <img class="p2" src="{{Characters[0].image}}">
+        <table>
+
+
+            <tr> 
+            
+                <td> Nom : </td>
+                <td> {{Ennemy_name}}</td>
+            
+                </tr>
+            
+                <tr> 
+            
+                    <td> Pv : </td>
+                    <td> {{Ennemy_Pv}}</td>
+                
+                    </tr>
+            
+                    <tr> 
+            
+                        <td> Attaque : </td>
+                        <td> {{Ennemy_attack}}</td>
+                    
+                        </tr>
+            
+            
+            
+            </table>
+
+      </div>
+
+      
+
+      <router-outlet></router-outlet>
+      
+      
+      
+      
+      
+      
+
+    
+    </div>
+    
+    
+    
+    
+    </div>
+

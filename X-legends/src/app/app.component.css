@@ -1,0 +1,72 @@
+#container {
+    widows: 50%;
+    
+    padding: 0;
+    background: url("/assets/theme.jpg");
+
+    width: 100%;
+    height: 600px;
+	
+    
+}
+
+#a{
+    margin-left: 0%;
+ 
+    width: 100%;
+    height: 100%;
+
+}
+
+#affiche{
+position: relative;
+ margin-left: 35%;
+ 
+ width: 30%;
+ height: 50%;
+ 
+
+}
+
+#affiche img{
+    position: absolute;
+    left: 0;
+}
+
+@keyframes fondu-in-out {
+	0% { opacity: 0; animation-timing-function: ease-in; }
+    10% { opacity: 0; animation-timing-function: ease-out; }
+    30% { opacity: 1 }
+    40% { opacity: 1 }
+    60% { opacity: 0 }
+    70% { opacity: 1 }
+    90% { opacity: 1 }
+    100% { opacity: 0 }
+    
+    
+}
+
+
+#affiche img.animation_asset {
+	animation-name: fondu-in-out;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    margin-left: 0%;
+ 
+    width: 100%;
+    height: 100%;
+}
+
+
+#container .play_commands{
+
+    margin-left: 40%;
+    margin-top: 5%;
+ 
+    width: 20%;
+    height: 10%;
+
+}
+

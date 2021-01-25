@@ -1,0 +1,25 @@
+img.p1 {
+
+ 
+    width: 15%;
+    height: 15%;
+}
+
+table
+{
+margin: auto;
+}
+td
+{
+text-align :center;
+}
+
+.play_commands{
+
+    margin-left: 40%;
+    margin-top: 5%;
+ 
+    width: 20%;
+    height: 10%;
+
+}
