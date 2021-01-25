@@ -21,7 +21,31 @@
 
 }
 
+.command_attack:active{
+
+    margin-left: 40%;
+    margin-top: 5%;
+ 
+    width: 10%;
+    height: 5%;
+
+    animation-play-state:running;
+
+}
+
 .command_attack_sp{
+
+    margin-left: 20%;
+    margin-top: 10%;
+ 
+    width: 10%;
+    height: 5%;
+
+    animation-play-state:running;
+
+}
+
+.command_attack_sp:active{
 
     margin-left: 20%;
     margin-top: 10%;
@@ -44,6 +68,37 @@
     width: 10%;
     height: 10%;
 }
+
+#affiche img.animation_asset {
+opacity: 0;
+    text-align: center;
+       width: 10%;
+       height: 10%;
+   }
+   
+   #affiche img.animation_asset {
+	animation-name: fondu-in-out;
+	animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-play-state: paused;
+ 
+    
+}
+
+@keyframes fondu-in-out {
+	0% { opacity: 0; }
+    10% { opacity: 0;}
+    30% { opacity: 1 }
+    40% { opacity: 1 }
+    60% { opacity: 0 }
+    70% { opacity: 1 }
+    90% { opacity: 1 }
+    100% { opacity: 0 }
+    
+    
+}
+
 
 table
 {

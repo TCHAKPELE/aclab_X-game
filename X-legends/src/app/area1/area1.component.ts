@@ -37,16 +37,36 @@ return Round;
   };
 
   Attack = function(variable) {
+
+    if(this.Ennemy_Pv<0){
+
+      this.Ennemy_Pv = "K.O";
+      this.variable = "";
+    }
   
     this.Ennemy_Pv = this.Ennemy_Pv - variable;
+
+    
 
 
   };
 
 
   Attack_sp = function(variable) {
+
+    if(this.Ennemy_Pv<0){
+
+      this.Ennemy_Pv = "K.O";
+      this.variable = "";
+    }
   
     this.Ennemy_Pv = this.Ennemy_Pv - variable;
+
+    if(this.Ennemy_Pv<0){
+
+      this.Ennemy_Pv = "K.O";
+      this.variable = "";
+    }
 
   };
   ngOnInit() {
