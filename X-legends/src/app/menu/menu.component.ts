@@ -47,12 +47,12 @@ Characters = [
 ];
   public numid;
  
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,private router: Router) { }
 
-  start = function(numid) {
+  start = function() {
   
   
-    this.router.navigate(['/area1',numid]);
+    this.router.navigate(['/area1',this.numid]);
     
   };
 

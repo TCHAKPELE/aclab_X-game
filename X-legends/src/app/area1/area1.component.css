@@ -1,10 +1,54 @@
 #container {
-    widows: 50%;
+    widows: 100%;
     
     padding: 0;
     background: url("/assets/Area1.png") no-repeat center center ;
+    background-size: 50%;
 
     
 	margin-bottom:5% ;
     
 }
+
+
+.command_attack{
+
+    margin-left: 40%;
+    margin-top: 5%;
+ 
+    width: 10%;
+    height: 5%;
+
+}
+
+.command_attack_sp{
+
+    margin-left: 20%;
+    margin-top: 10%;
+ 
+    width: 10%;
+    height: 5%;
+
+}
+
+#affiche img.p1 {
+
+ text-align: center;
+    width: 10%;
+    height: 10%;
+}
+
+#affiche img.p2 {
+	text-align: center;
+    
+    width: 10%;
+    height: 10%;
+}
+
+table
+{
+text-align: center;
+margin: auto;
+width: 50%;
+}
+

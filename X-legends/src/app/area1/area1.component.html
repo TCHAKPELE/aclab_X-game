@@ -10,83 +10,49 @@
       <audio src="assets/bruitage/Overworld.mp3" autoplay></audio>
     
       <div>
-        <h1>Round : {{Round}}</h1>
-        <img class="p1" src="{{Characters[numid].image}}">
-        <table>
+        <h1>Round : 0 </h1>
 
-
-            <tr> 
-            
+        <table >
+            <tr>
                 <td> Nom : </td>
-                <td> {{Characters[numid].name}}</td>
-            
-                </tr>
-            
-                <tr> 
-            
-                    <td> Pv : </td>
-                    <td> {{Characters[numid].pv}}</td>
-                
-                    </tr>
-            
-                    <tr> 
-            
-                        <td> Attaque : </td>
-                        <td> {{Characters[numid].attack}}</td>
-                    
-                        </tr>
-
-                        <tr> 
-            
-                            <td> Attaque_sp : </td>
-                            <td> {{Characters[numid].sp}}</td>
-                        
-                            </tr>
-            
-            
-            
-            </table>
-        <button type="button" class="play_commands" (click)="Attack(Characters[numid].attack);">Attack</button>
-        <button type="button" class="play_commands" (click)="Attack_sp({{Characters[numid].sp}});">Attack sp</button>
-        
-
-      </div>
-
-      <div>
-        <img class="p2" src="{{Characters[0].image}}">
-        <table>
-
-
-            <tr> 
-            
+                <td> {{name}}</td>
+                <td colspan="1"> </td>
                 <td> Nom : </td>
                 <td> {{Ennemy_name}}</td>
-            
-                </tr>
-            
-                <tr> 
-            
-                    <td> Pv : </td>
-                    <td> {{Ennemy_Pv}}</td>
+            </tr>
+            <tr>
                 
-                    </tr>
+                <td> Pv : </td>
+                <td> {{Pv}}</td>
+                <td colspan="1"> </td>
+                <td> Pv : </td>
+                <td> {{Ennemy_Pv}}</td>
+            </tr>
+
+            <tr>
+                
+                <td> Attaque : </td>
+                <td> {{attack}}</td>
+                <td colspan="1"> </td>
+                <td> Attaque : </td>
+                <td> {{Ennemy_attack}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><img class="p1" src="{{image}}"></td>
+              <td colspan="1"></td>
+              <td colspan="2"> <img class="p2" src="{{Ennemy_image}}"></td>
+
+            </tr>
+          </table>
+       
+        
             
-                    <tr> 
-            
-                        <td> Attaque : </td>
-                        <td> {{Ennemy_attack}}</td>
-                    
-                        </tr>
-            
-            
-            
-            </table>
+
+            <button type="button" class="command_attack" (click)="Attack(attack);">Attack</button>
+        <button type="button" class="command_attack_sp" (click)="Attack_sp(sp);">Attack sp</button>
 
       </div>
-
-      
-
-      <router-outlet></router-outlet>
       
       
       

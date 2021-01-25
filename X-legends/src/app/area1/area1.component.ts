@@ -19,6 +19,14 @@ export class Area1Component implements OnInit {
   public Ennemy_name;
   public Ennemy_attack;
   public Ennemy_Pv;
+  public Ennemy_image;
+
+  public name;
+  public attack;
+  public Pv;
+  public image;
+  public sp;
+
 
   start = function() {
   
@@ -79,7 +87,11 @@ return Round;
         }
   ];
 
-  let Ennemy_name = Characters[0].name;
+  
+    let id = parseInt(this.route.snapshot.paramMap.get('id'));
+    this.numid=id;
+
+    let Ennemy_name = Characters[0].name;
   this.Ennemy_name=Ennemy_name;
 
   let Ennemy_attack = Characters[0].attack;
@@ -87,9 +99,23 @@ return Round;
   let Ennemy_Pv = Characters[0].pv;
   this.Ennemy_Pv = Ennemy_Pv;
 
+  let Ennemy_image = Characters[0].image;
+  this.Ennemy_image = Ennemy_image;
+
+  let name = Characters[this.numid].name;
+  this.name=name;
+
+  let attack = Characters[this.numid].attack;
+  this.attack = attack;
+  let Pv = Characters[this.numid].pv;
+  this.Pv = Pv;
+
+  let image = Characters[this.numid].image;
+  this.image = image;
+
+  let sp = Characters[this.numid].special;
+  this.sp = sp;
     
-    let id = parseInt(this.route.snapshot.paramMap.get('id'));
-    this.numid=id;
     
   }
 

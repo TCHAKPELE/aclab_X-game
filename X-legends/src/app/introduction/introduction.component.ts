@@ -59,7 +59,7 @@ export class IntroductionComponent implements OnInit {
   Choix_personnage2 = function() {
     const Characters = [
       {
-        id: 1,
+        id: 0,
         image:'assets/Bahamut.png',
         name: 'Bahamut',
         pv: 500,
@@ -67,7 +67,7 @@ export class IntroductionComponent implements OnInit {
         special : 180
       },
       {
-        id: 2,
+        id: 1,
         image:'assets/kirito.png',
         name: 'kirito',
         pv: 400,
@@ -75,7 +75,7 @@ export class IntroductionComponent implements OnInit {
         special : 210
       },
       {
-        id: 3,
+        id: 2,
         image : 'assets/Gilgamesh.png',
         name: 'Gilgamesh',
         pv: 550,
@@ -84,7 +84,7 @@ export class IntroductionComponent implements OnInit {
       },
   
       {
-          id: 4,
+          id: 3,
           image : 'assets/Lucifer.png',
           name: 'Lucifer',
           pv: 320,
@@ -98,7 +98,7 @@ export class IntroductionComponent implements OnInit {
   Choix_personnage3 = function() {
     const Characters = [
       {
-        id: 1,
+        id: 0,
         image:'assets/Bahamut.png',
         name: 'Bahamut',
         pv: 500,
@@ -106,7 +106,7 @@ export class IntroductionComponent implements OnInit {
         special : 180
       },
       {
-        id: 2,
+        id: 1,
         image:'assets/kirito.png',
         name: 'kirito',
         pv: 400,
@@ -114,7 +114,7 @@ export class IntroductionComponent implements OnInit {
         special : 210
       },
       {
-        id: 3,
+        id: 2,
         image : 'assets/Gilgamesh.png',
         name: 'Gilgamesh',
         pv: 550,
@@ -123,7 +123,7 @@ export class IntroductionComponent implements OnInit {
       },
   
       {
-          id: 4,
+          id: 3,
           image : 'assets/Lucifer.png',
           name: 'Lucifer',
           pv: 320,
@@ -137,7 +137,7 @@ export class IntroductionComponent implements OnInit {
   Choix_personnage4 = function() {
     const Characters = [
       {
-        id: 1,
+        id: 0,
         image:'assets/Bahamut.png',
         name: 'Bahamut',
         pv: 500,
@@ -145,7 +145,7 @@ export class IntroductionComponent implements OnInit {
         special : 180
       },
       {
-        id: 2,
+        id: 1,
         image:'assets/kirito.png',
         name: 'kirito',
         pv: 400,
@@ -153,7 +153,7 @@ export class IntroductionComponent implements OnInit {
         special : 210
       },
       {
-        id: 3,
+        id: 2,
         image : 'assets/Gilgamesh.png',
         name: 'Gilgamesh',
         pv: 550,
@@ -162,7 +162,7 @@ export class IntroductionComponent implements OnInit {
       },
   
       {
-          id: 4,
+          id: 3,
           image : 'assets/Lucifer.png',
           name: 'Lucifer',
           pv: 320,
